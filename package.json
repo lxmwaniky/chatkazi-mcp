@@ -1,0 +1,26 @@
+{
+  "name": "@lxmwaniky/chatkazi-mcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "bin": {
+    "chatkazi-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "files": ["build"],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3"
+  }
+}

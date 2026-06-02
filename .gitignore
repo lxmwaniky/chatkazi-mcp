@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+.pnpm-debug.log*
+
+# Build outputs
+build/
+
+# Personal notes
+docs/
+
+# Local Environment & Credentials
+.env
+.env.local
+.env.*.local
+
+# IDE and OS files
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
