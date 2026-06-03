@@ -136,22 +136,32 @@ To integrate this server into an MCP client or host platform, add the server to 
 
 To compile and verify this project locally:
 
+### Prerequisites
+* **Node.js** (v18 or higher is recommended)
+* **pnpm** (preferred package manager)
+
+### Step-by-Step Setup
+
 1. **Install dependencies:**
+   Installs node modules and setup definitions:
    ```bash
    pnpm install
    ```
 
 2. **Compile TypeScript code:**
+   Compiles the TypeScript source files from the `src/` directory into JavaScript inside the `build/` directory:
    ```bash
    pnpm run build
    ```
 
 3. **Grant executable permissions to the output binary:**
+   Makes the built JS file directly executable since it starts with a Node shebang:
    ```bash
    chmod +x build/index.js
    ```
 
 4. **Verify using the MCP Inspector:**
+   Inspect tools dynamically and test real-time payloads:
    ```bash
    CHATKAZI_API_KEY="your_api_key" pnpm dlx @modelcontextprotocol/inspector node build/index.js
    ```
