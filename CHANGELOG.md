@@ -1,3 +1,13 @@
+# 1.0.0 (2026-06-03)
+
+
+### Features
+
+* add ChatKazi client and server integration ([1a89f38](https://github.com/lxmwaniky/chatkazi-mcp/commit/1a89f38d23441a79c7e590565f324a60d24a067b))
+* add initial README.md with project overview and configuration details ([57889cb](https://github.com/lxmwaniky/chatkazi-mcp/commit/57889cb9095159515bf32077cfcfaf4a480484c6))
+* **ci:** configure oidc permissions and [secure] publishing in release workflow for secure release ([8760ac7](https://github.com/lxmwaniky/chatkazi-mcp/commit/8760ac71131a60dadefff54dc126ab75a763a33a))
+* setup semantic release CI/CD workflows and add package typechecking script ([9529aba](https://github.com/lxmwaniky/chatkazi-mcp/commit/9529abae27b1f2b1d6c54ae0062a2fee665513c5))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
