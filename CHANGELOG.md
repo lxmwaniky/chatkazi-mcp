@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/lxmwaniky/chatkazi-mcp/compare/v1.0.2...v1.0.3) (2026-06-03)
+
+
+### Bug Fixes
+
+* automate executable permissions via postbuild script ([e6f7d0e](https://github.com/lxmwaniky/chatkazi-mcp/commit/e6f7d0e5cafd428e14ec198c7cbb7d3b7fe2408e))
+
 ## [1.0.2](https://github.com/lxmwaniky/chatkazi-mcp/compare/v1.0.1...v1.0.2) (2026-06-03)
 
 
