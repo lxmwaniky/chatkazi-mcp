@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/lxmwaniky/chatkazi-mcp/compare/v1.0.0...v1.0.1) (2026-06-03)
+
+
+### Bug Fixes
+
+* sanitize recipient phone numbers locally before sending ([40f3629](https://github.com/lxmwaniky/chatkazi-mcp/commit/40f3629928a1eda6a91bf41c3ebd96d4233cd947))
+
 # 1.0.0 (2026-06-03)
 
 
