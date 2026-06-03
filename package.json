@@ -17,6 +17,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
+    "postbuild": "chmod +x build/index.js",
     "watch": "tsc -w",
     "typecheck": "tsc --noEmit"
   },
