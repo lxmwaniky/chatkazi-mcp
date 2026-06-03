@@ -130,6 +130,102 @@ To integrate this server into an MCP client or host platform, add the server to 
 }
 ```
 
+## Client Integration Guides
+
+Find instructions below to connect this MCP server to your favorite developer tool.
+
+<details>
+<summary><b>1. Claude Desktop</b></summary>
+
+Add the configuration to your `claude_desktop_config.json`:
+* **File Path (macOS):** `~/Library/Application Support/Claude/claude_desktop_config.json`
+* **File Path (Windows):** `%APPDATA%\Claude\claude_desktop_config.json`
+
+```json
+{
+  "mcpServers": {
+    "chatkazi-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@lxmwaniky/chatkazi-mcp"
+      ],
+      "env": {
+        "CHATKAZI_API_KEY": "YOUR_CHATKAZI_API_KEY_HERE"
+      }
+    }
+  }
+}
+```
+</details>
+
+<details>
+<summary><b>2. Claude Code (CLI)</b></summary>
+
+Dynamically register this server with the Claude CLI:
+
+```bash
+claude mcp add chatkazi-mcp npx -y @lxmwaniky/chatkazi-mcp --env CHATKAZI_API_KEY="YOUR_CHATKAZI_API_KEY_HERE"
+```
+</details>
+
+<details>
+<summary><b>3. Cursor</b></summary>
+
+Connect this server visually in your editor settings:
+
+1. Open **Cursor Settings** > **Features** > **MCP**.
+2. Click **+ Add New MCP Server**.
+3. Configure the following fields:
+   * **Name:** `chatkazi-mcp`
+   * **Type:** `command`
+   * **Command:** `npx -y @lxmwaniky/chatkazi-mcp`
+4. Click **+ Add Env** to configure your `CHATKAZI_API_KEY`.
+</details>
+
+<details>
+<summary><b>4. Windsurf</b></summary>
+
+Add this to your Codeium MCP server configuration file:
+* **File Path:** `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "chatkazi-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@lxmwaniky/chatkazi-mcp"
+      ],
+      "env": {
+        "CHATKAZI_API_KEY": "YOUR_CHATKAZI_API_KEY_HERE"
+      }
+    }
+  }
+}
+```
+</details>
+
+<details>
+<summary><b>5. Antigravity CLI</b></summary>
+
+Configure this server directly inside your central configuration:
+
+```json
+"chatkazi-mcp": {
+  "command": "npx",
+  "args": [
+    "-y",
+    "@lxmwaniky/chatkazi-mcp"
+  ],
+  "env": {
+    "CHATKAZI_API_KEY": "YOUR_CHATKAZI_API_KEY_HERE"
+  }
+}
+```
+</details>
+
 ---
 
 ## Local Development
