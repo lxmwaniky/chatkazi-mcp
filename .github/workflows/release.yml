@@ -10,6 +10,9 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -34,4 +37,4 @@ jobs:
         run: pnpm exec semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: 'provenance'

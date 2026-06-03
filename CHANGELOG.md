@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automated CI/CD pipelines including PR validation and semantic releasing workflows (`validate.yml` and `release.yml`).
 - Semantic Release configuration (`.releaserc.json`) to automate npm publishing and changelog creation on main branch merges.
 - `"typecheck": "tsc --noEmit"` script in `package.json` to support CI validation.
+- Secure OIDC/Provenance publishing on npm within `release.yml` using `id-token` write permissions and `'provenance'` publishing configurations.
 
 ### Changed
 - Incremented version from `1.0.0` to `1.0.1` for patch improvements.
