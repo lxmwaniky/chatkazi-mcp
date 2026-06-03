@@ -34,6 +34,9 @@
   "author": "Alex Nyambura",
   "license": "ISC",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0"
   },
