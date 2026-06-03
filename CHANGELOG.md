@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/lxmwaniky/chatkazi-mcp/compare/v1.0.1...v1.0.2) (2026-06-03)
+
+
+### Bug Fixes
+
+* resolve scoped publish permission and clean oidc configuration ([02e77c2](https://github.com/lxmwaniky/chatkazi-mcp/commit/02e77c2869da6b48273a9d90325d7d24c7250acc))
+
 ## [1.0.1](https://github.com/lxmwaniky/chatkazi-mcp/compare/v1.0.0...v1.0.1) (2026-06-03)
 
 
