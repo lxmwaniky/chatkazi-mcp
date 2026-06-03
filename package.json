@@ -1,7 +1,15 @@
 {
   "name": "@lxmwaniky/chatkazi-mcp",
   "version": "1.0.1",
-  "description": "",
+  "description": "An implementation of the Model Context Protocol (MCP) designed to act as a bridge between an MCP-compliant client and the ChatKazi WhatsApp API gateway.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxmwaniky/chatkazi-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lxmwaniky/chatkazi-mcp/issues"
+  },
+  "homepage": "https://github.com/lxmwaniky/chatkazi-mcp#readme",
   "main": "build/index.js",
   "bin": {
     "chatkazi-mcp": "./build/index.js"
