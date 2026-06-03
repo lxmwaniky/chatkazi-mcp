@@ -1,6 +1,6 @@
 {
   "name": "@lxmwaniky/chatkazi-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "build/index.js",
   "bin": {
@@ -12,8 +12,15 @@
     "watch": "tsc -w"
   },
   "files": ["build"],
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "chatkazi",
+    "whatsapp",
+    "whatsapp-api",
+    "mcp-server"
+  ],
+  "author": "Alex Nyambura",
   "license": "ISC",
   "type": "module",
   "dependencies": {
