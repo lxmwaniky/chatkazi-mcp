@@ -46,6 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Semantic Release configuration (`.releaserc.json`) to automate npm publishing and changelog creation on main branch merges.
 - `"typecheck": "tsc --noEmit"` script in `package.json` to support CI validation.
 - Secure OIDC/Provenance publishing on npm within `release.yml` using `id-token` write permissions and `'provenance'` publishing configurations.
+- Comprehensive, collapsible **Client Integration Guides** in `README.md` for Claude Desktop, Claude Code, Cursor, Windsurf, and Antigravity CLI.
 
 ### Changed
 - Incremented version from `1.0.0` to `1.0.1` for patch improvements.
