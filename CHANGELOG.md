@@ -28,3 +28,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Incremented version from `1.0.0` to `1.0.1` for patch improvements.
+
+### Fixed
+- Added client-side phone number sanitization to `src/client.ts` (`sanitizePhone`), stripping spaces, hyphens, and leading `+` characters before hitting the ChatKazi API endpoints.

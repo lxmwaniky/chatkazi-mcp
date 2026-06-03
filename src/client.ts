@@ -71,10 +71,14 @@ export class ChatKaziClient {
     return this.request<any>("/session/logout", "POST", { sessionId });
   }
 
+  private sanitizePhone(phone: string): string {
+    return phone.replace(/[+\s-]/g, "");
+  }
+
   async sendTextMessage(to: string, text: string, sessionId?: string) {
     return this.request<any>("/messages/text", "POST", {
       sessionId: sessionId || "default",
-      to,
+      to: this.sanitizePhone(to),
       text,
     });
   }
@@ -90,7 +94,7 @@ export class ChatKaziClient {
   }) {
     return this.request<any>("/messages/media", "POST", {
       sessionId: params.sessionId || "default",
-      to: params.to,
+      to: this.sanitizePhone(params.to),
       url: params.url,
       type: params.type || "image",
       caption: params.caption,
